@@ -80,7 +80,7 @@ public class UserController {
 		System.out.println("filePath : " + filePath);
 		try {
 			Files.write(filePath, file.getBytes());
-			mRepo.update(id, filePath.toString());
+			mRepo.update(id, "/images/"+uuidFileName);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
